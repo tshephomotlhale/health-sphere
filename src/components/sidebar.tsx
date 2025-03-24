@@ -10,12 +10,15 @@ import {
   Bell,
   BicepsFlexed,
   Brain,
+  CarFront,
+  ClipboardPlus,
   HandHeart,
   Home,
   LineChart,
   LogOut,
   Package,
   Settings,
+  SquareLibrary,
   Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,24 +37,24 @@ export const navItems = [
     icon: <Home className="h-4 w-4" />,
   },
   {
-    label: "Physical Fitness",
+    label: "Vehicles",
     href: "/dashboard/physical-fitness",
-    icon: <BicepsFlexed className="h-4 w-4" />,
+    icon: <CarFront className="h-4 w-4" />,
   },
   {
-    label: "Mental Health",
+    label: "Drivers",
     href: "/dashboard/mental-health",
-    icon: <Brain className="h-4 w-4" />,
+    icon: <Users className="h-4 w-4" />,
   },
   {
-    label: "Motivation",
+    label: "Bookings",
     href: "/dashboard/motivation",
-    icon: <HandHeart className="h-4 w-4" />,
+    icon: <SquareLibrary className="h-4 w-4" />,
   },
   {
-    label: "Health Analysis",
+    label: "Reports",
     href: "/dashboard/health-analysis",
-    icon: <Activity className="h-4 w-4" />,
+    icon: <ClipboardPlus className="h-4 w-4" />,
   },
   {
     label: "Settings",
@@ -69,9 +72,9 @@ export default function Sidebar() {
         <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Image
-              src="/healthsphere.svg"
-              alt="Health Sphere Logo"
-              width={150}
+              src="/biust.svg"
+              alt="BIUST Logo"
+              width={120}
               height={30}
               priority
             />
@@ -99,7 +102,7 @@ export default function Sidebar() {
         </div>
         <div className="mt-auto p-4 mb-5">
           <Button className="w-full">
-            <LogOut className="h-4 w-4" /> Login
+            <LogOut className="h-4 w-4" /> Logout
           </Button>
         </div>
       </div>
